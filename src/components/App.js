@@ -41,7 +41,9 @@ function App() {
       ) : (
         "initializing..."
       )}
-      <footer>&copy; {new Date().getFullYear()} Defian Nwitter</footer>
+      <div style={{ width: "100%", position: "fixed", textAlign: "center" }}>
+        <footer>&copy; {new Date().getFullYear()} Defian Nwitter</footer>
+      </div>
     </>
   );
 }
