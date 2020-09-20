@@ -26,6 +26,13 @@ const Home = ({ userObj }) => {
         id: doc.id,
         ...doc.data(),
       }));
+      nweetArray.sort((a, b) => {
+        return a.createdAt > b.createdAt
+          ? -1
+          : a.createdAt < b.createdAt
+          ? 1
+          : 0;
+      });
       setNweets(nweetArray);
     });
   }, []);
